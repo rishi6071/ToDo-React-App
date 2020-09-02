@@ -21,7 +21,6 @@ const Todo = () => {
     const deleteItem = (id) => {
         setTodoItems( (existingItems) => {
             return existingItems.filter( (item, index) => {
-                // Not Showing the deleted Item
                 return index !== id;
             });
         });
