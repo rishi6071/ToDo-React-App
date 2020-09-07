@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Todo.css';
 import Item from './Item';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const Todo = () => {
     const [task, setTask] = useState("");
@@ -43,9 +44,9 @@ const Todo = () => {
             {   
                 todoItems.map( (currentTask, id) => {
                     return <Item key={id} 
-                    id={id} 
-                    text={currentTask} 
-                    onSelect = {deleteItem}
+                        id={id} 
+                        text={currentTask} 
+                        onSelect = {deleteItem}
                     />
                 })
             }
